@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    outline: solid 2px;
+    /* outline: solid 2px; */
     font-family:"Noto Sans",sans-serif;
     list-style:none;
 }
@@ -11,6 +11,25 @@
     margin: 0 auto;
 }
 
+
+/* display */
+.df{
+    display: flex;
+}
+.df_colum{
+    display: flex;
+    flex-direction: column;
+}
+.jcc{
+    justify-content: center;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+.aic{
+    align-items: center;
+}
 
 
 .header{
@@ -26,7 +45,7 @@
     transform: translate(0%, -50%);
 }
 
-.header ul{
+.navbar{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -104,6 +123,10 @@
     .burger{
         display: flex;
     }
+    .burger:active .navbar{
+        display: flex;
+    }
+
     .navbar{
         display: none;
         flex-direction:column;
@@ -120,6 +143,7 @@
     align-items: center;
     padding: 80px 0;
     background: #FAFAFA;
+    gap: 24px;
 }
 .bannersign{
     padding: 72px;
@@ -129,6 +153,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    max-width: 528px;
     gap: 16px;
     
 }
@@ -140,10 +165,11 @@
 .signblock span{
     display: inline;
     font-size: 24px;
-    line-height: 28.8px;
+    line-height: 1.2;
     position: relative;
+    z-index: 0;
 }
-.signblock::before{
+.quote{
     content: '';
     display: block;
     position: absolute;
@@ -153,7 +179,7 @@
     height: 72px;
     background: url('./icon/quote-left.png') no-repeat center center;
 }
-.signblock::after{
+.quote2{
     content: '';
     display: block;
     position: absolute;
@@ -209,18 +235,30 @@
     left:30%;
     bottom:0px;
 }
-/* @media (max-width: 768px) {
-    .bannercards{
+@media (max-width: 768px) {
+    .bannersign{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
+        padding: 40px 24px;
     }
-    .banCard{
-        max-width: 235px;
-        width: 96%;
+    .quote, .quote2{
+        position:static;
     }
-} */
+    .signblock{
+        max-width: 500px;
+    }
+}
 
 @media (max-width: 375px) {
+    
+    .signblock{
+        max-width: 300px;
+    }
+    .signblock span{
+        font-size: 20px;
+    }
     .bannercards{
         justify-content: center;
         flex-wrap: wrap;
@@ -240,6 +278,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 80px 0 ;
 }
 
 .card{
@@ -249,7 +288,7 @@
     margin-bottom: 80px;
 }
 
-img{
+.block img{
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -287,7 +326,6 @@ img{
 }
 
 .tagblock>li{
-    height: 32px;
     padding: 4px 12px;
     border-radius: 16px;
     font-size: 16px;
@@ -308,14 +346,20 @@ img{
 .pagebtn{
     width: 40px;
     height: 40px;
-    background: #1E1E1E;
-    color: white;
+    background: white;
+    color: black;
     border-radius: 4px;
     text-align:center;
     font-size:24px;
     font-weight: 400;
     line-height: 40px;
+    cursor:pointer;
 }
+.pagebtn:hover{
+    background: #1E1E1E;
+    color: white;
+}
+
 /* @media (max-width: 1366px) {
     .card{
         width: 48%;
@@ -338,4 +382,84 @@ img{
 }
 
 
+.footerbg{
+    background: url(./img/footer-bg-lg.png);
+}
 
+
+.footer{
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_desc{
+    gap: 24px;
+}
+.footer_desc p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.footer_desc img{
+    width: 120px;
+    height: 54px;
+}
+.mail{
+    color: #919191;
+}
+
+.footer_btnlist{
+    max-width: 306px;
+    gap: 24px;
+}
+
+.btn{
+    padding: 8px 24px;
+    border-radius: 8px;
+    gap: 8px;
+}
+
+.btn .icon{
+    width: 56px;
+    height: 56px;
+}
+
+.btn>p{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.blackbtn{
+    background: #000;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    
+    .footer{
+        flex-direction: column;
+        gap: 40px;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 12px;
+    }
+    
+    .footer_btnlist{
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    .footer{
+        flex-direction: column;
+        gap: 40px;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 12px;
+    }
+    .footerbg{
+        background: url(./img/footer-bg-sm.png);
+    }
+
+}
