@@ -77,7 +77,7 @@ body{
     text-align:center;
     text-decoration:none;
 }
-.navbar a:hover::before,.header a:hover::after,.header li:hover::before,.header li:hover::after{
+.navbar a:hover::before,.navbar a:hover::after,.navbar li:hover::before,.navbar li:hover::after{
     border-color: black;
 }
 .navbar a::before{
@@ -116,6 +116,48 @@ body{
     height: 8px;
     border-right:2px solid transparent;
     border-top:2px solid transparent;
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+
+
+.navbar>.active a::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-left:2px solid black;
+    border-bottom:2px solid black;
+    position:absolute;
+    left:0px;
+    bottom:0px;
+}
+.navbar>.active a::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+}
+.navbar>.active::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-left:2px solid black;
+    border-top:2px solid black;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+.navbar>.active::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-right:2px solid black;
+    border-top:2px solid black;
     position:absolute;
     right:0px;
     top:0px;
