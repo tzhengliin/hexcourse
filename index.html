@@ -7,39 +7,39 @@
     <link rel="stylesheet" href="all.css">
   </head>
   <body>
-    <div class="wrap">
-      
-      <div class="header">
-        <img src="./icon/logo.svg" class="logo" alt="">
+
+    <div class="header">
+      <a href="/" class="logo"><img src="./icon/logo.svg" alt="Logo"></a>
+      <input type="checkbox"  name="" id="menu-control" class="menu-control">
+      <label for="menu-control">
         <div class="burger">
-          <img src="https://www.shutterstock.com/image-vector/burger-menu-web-icon-vector-600w-1077487118.jpg" alt="">
+            <img src="https://www.shutterstock.com/image-vector/burger-menu-web-icon-vector-600w-1077487118.jpg" alt="">
         </div>
-        <ul class="navbar">
-          <li><a href="">首頁</a></li>
-          <li><a href="">作品集</a></li>
-          <li><a href="">服務項目</a></li>
-          <li><a href="">部落格</a></li>
-          <li><a href="">聯絡我</a></li>
-        </ul>
-      </div>
+      </label>
+      <ul class="flex navbar">
+        <li><a href="">首頁</a></li>
+        <li><a href="">作品集</a></li>
+        <li><a href="">服務項目</a></li>
+        <li><a href="">部落格</a></li>
+        <li><a href="">聯絡我</a></li>
+      </ul>
     </div>
 
-
-    <div class="banner">
+    <div class="banner flex flex_column justify-center align-center">
       <div class="bannersign">
-        <div class="quote"></div>
+        <div class="quote quote-start"></div>
         <div class="signblock">
           <p><span>讓使用者在觀賞與使用的旅程中，<span style="word-break: keep-all;">發現設計的價值</span></span></p>
           <p><span>而我在設計與開發的過程中，<span style="word-break: keep-all;">看見自己的價值</span></span></p>
         </div>
-        <div class="quote2"></div>
+        <div class="quote quote-end"></div>
       </div>
-      <div class="bannercards">
-        <div class="banCard">
+      <div class="bannercards flex justify-space-evenly">
+        <div class="banCard flex flex_column justify-center align-center">
           <p>2B經驗</p>
           <span>內部監控系統、庫存系統、採購系統、行銷整合系統</span>
         </div>
-        <div class="banCard">
+        <div class="banCard flex flex_column justify-center align-center">
           <p>2C經驗</p>
           <span>跨國美妝保養電商、個人品牌網站、醫美網站、電子商務</span>
         </div>
@@ -47,131 +47,130 @@
     </div>
 
     <div class="wrap">
-      <div class="content">
-        <div class="card">
-          <div class="block">
-            <img src="./img/work-image1.png" alt="">
+      <ul class="content flex flex-wrap justify-space-evenly ">
+        <li class="card">
+          <div class="imgblock">
+            <img src="./img/work-image1.png" alt="星際旅行訂票平台">
           </div>
-          <div class="block2">
+          <div class="card_description">
             <div class="data">
               <h2>星際旅行訂票平台</h2>
               <p>悠遊宇宙的夢想，從這裡開始實現</p>
             </div>
-            <ul class="tagblock">
+            <ul class="tagblock flex flex-wrap">
               <li>網頁設計</li>
               <li>響應式設計</li>
               <li>Bootstrap</li>
             </ul>
           </div>
-        </div>
-        <div class="card">
-          <div class="block">
-            <img src="./img/work-image2.png" alt="">
+        </li>
+        <li class="card">
+          <div class="imgblock">
+            <img src="./img/work-image2.png" alt="理財App">
           </div>
-          <div class="block2">
+          <div class="card_description">
             <div class="data">
               <h2>理財App</h2>
               <p>連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
             </div>
-            <ul class="tagblock">
+            <ul class="tagblock flex flex-wrap">
               <li>APP設計</li>
               <li>iOS</li>
               <li>React</li>
             </ul>
           </div>
-        </div>
-        <div class="card">
-          <div class="block">
-            <img src="./img/work-image3.png" alt="">
+        </li>
+        <li class="card">
+          <div class="imgblock">
+            <img src="./img/work-image3.png" alt="醫美診所官網">
           </div>
-          <div class="block2">
+          <div class="card_description">
             <div class="data">
               <h2>醫美診所官網</h2>
               <p>永保青春的秘密，從粹究開始</p>
             </div>
-            <ul class="tagblock">
+            <ul class="tagblock flex flex-wrap">
               <li>網頁設計</li>
               <li>響應式設計</li>
               <li>ＷordPress</li>
             </ul>
           </div>
-        </div>
-        <div class="card">
-          <div class="block">
-            <img src="./img/work-image4.png" alt="">
+        </li>
+        <li class="card">
+          <div class="imgblock">
+            <img src="./img/work-image4.png" alt="美美美早餐店">
           </div>
-          <div class="block2">
+          <div class="card_description">
             <div class="data">
               <h2>美美美早餐店 POS 機 UI Design</h2>
               <p>訂單送單一目瞭然，自動報表分析好輕鬆</p>
             </div>
-            <ul class="tagblock">
+            <ul class="tagblock flex flex-wrap">
               <li>UI 設計</li>
               <li>前端開發</li>
               <li>Wix</li>
             </ul>
           </div>
-        </div>
-        <div class="card">
-          <div class="block">
-            <img src="./img/work-image5.png" alt="">
+        </li>
+        <li class="card">
+          <div class="imgblock">
+            <img src="./img/work-image5.png" alt="電影院訂票系統">
           </div>
-          <div class="block2">
+          <div class="card_description">
             <div class="data">
               <h2>電影院訂票系統</h2>
               <p>三步驟完成訂票，電腦手機都支援</p>
             </div>
-            <ul class="tagblock">
+            <ul class="tagblock flex flex-wrap">
               <li>前端開發</li>
               <li>後端支援</li>
               <li>Vue</li>
             </ul>
           </div>
-        </div>
-        <div class="card">
-          <div class="block">
-            <img src="./img/work-image6.png" alt="">
+        </li>
+        <li class="card">
+          <div class="imgblock">
+            <img src="./img/work-image6.png" alt="巧克巧克形象官網設計">
           </div>
-          <div class="block2">
+          <div class="card_description">
             <div class="data">
               <h2>巧克巧克形象官網設計</h2>
               <p>三步驟完成訂票，電腦手機都支援</p>
             </div>
-            <ul class="tagblock">
+            <ul class="tagblock flex flex-wrap">
               <li>UI設計</li>
               <li>設計系統</li>
               <li>網路電商</li>
             </ul>
           </div>
-        </div>
-        
-        <div class="pagenation">
-          <div class="pagebtn">1</div>
-          <div class="pagebtn">2</div>
-          <div class="pagebtn">3</div>
-        </div>
-      </div>
+        </li>
+      </ul>
+      <ul class="pagenation">
+        <li class="pagebtn pagebtn-now">1</li>
+        <li class="pagebtn">2</li>
+        <li class="pagebtn">3</li>
+      </ul>
     </div>
     <div class="footerbg">
       <div class="wrap footer">
-        <div class="footer_desc df_colum jcsb">
-          <img src="./icon/logo.svg" alt="">
-          <div class="df_colum">
+        <div class="footer_desc flex flex_column justify-between">
+          <a href="/"><img src="./icon/logo.svg" alt="Logo"></a>
+          <div class="flex flex_column">
             <p>若有數位產品設計和開發相關問題</p>
             <p>歡迎填寫表單，或直接與我聯絡！</p>
           </div>
-          <p class="mail">service@hexschool.com</p> 
+          <p class="mail"><a href="mailto:service@hexschool.com">service@hexschool.com</a></p> 
         </div>
-        <div class="footer_btnlist df_colum">
-          <div class="btn df aic blackbtn">
+        <div class="footer_btnlist flex flex_column">
+          <div class="btn flex align-center blackbtn">
             <img src="./icon/list.svg" alt="" class="icon">
             <p>填寫表單</p>
           </div>
-          <div class="btn df aic">
+          <div class="btn flex align-center">
             <img src="./icon/instagram.svg" alt="" class="icon">
             <p>hexschool_demo</p>
           </div>
-          <div class="btn df aic">
+          <div class="btn flex align-center">
             <img src="./icon/facebook.svg" alt="" class="icon">
             <p>hexschoolTW</p>
           </div>
